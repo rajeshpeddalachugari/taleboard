@@ -1,0 +1,52 @@
+﻿body {
+    font-family: 'Segoe UI' , sans-serif;
+}
+.logo{
+    font-family: 'Fredoka One', cursive;
+    font-size:46px;
+    /*color:#ff5c5c;*/
+    color:white;
+}
+.searchbox{
+    width:85% !important;
+    padding:8px;border:none;border-bottom:1px solid #ccc
+}
+.customfont{
+    font-family: 'Fredoka One', cursive;
+    font-weight:100 !important;
+}
+.header{
+    background-color:#255377;
+    color:white;
+}
+.menuItems{
+   color:white;
+    text-decoration:none;
+
+    padding:8px 16px;
+}
+.menuItems:hover{
+    background-color:none !important;
+   
+}
+.hrline{
+    margin:0;
+}
+.gist{
+    font-size:12px;
+    font-family: 'Segoe UI',sans-serif;
+}
+.postHeading{
+    font-family: 'Roboto Slab',Georgia, serif;
+}
+.tags{
+    font-size:10px;
+}
+.material-icons {
+    font-size:20px;
+    vertical-align: -14%;
+ }
+.postImage{
+    width:100%;
+}
+    
