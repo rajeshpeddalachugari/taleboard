@@ -5,27 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/w3.css" rel="stylesheet" />
     <link href="css/StyleSheet.css" rel="stylesheet" />
+    <script src="js/jquery-3.2.0.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+    <script src="https://use.fontawesome.com/aa038b001f.js"></script>
+    <script src="js/script.js"></script>
     
 
 </head>
 <body>
     <div class="w3-row">
-        <div class="w3-col l1 m1 s1 w3-red ribbon"></div>
-        <div class="w3-col l1 w3-pink ribbon"></div>
-        <div class="w3-col l1 w3-purple ribbon"></div>
-        <div class="w3-col l1 w3-deep-purple ribbon"></div>
-        <div class="w3-col l1 w3-indigo ribbon"></div>
-        <div class="w3-col l1 w3-blue ribbon"></div>
-        <div class="w3-col l1 w3-cyan ribbon"></div>
-        <div class="w3-col l1 w3-green ribbon"></div>
-        <div class="w3-col l1 w3-light-green ribbon"></div>
-        <div class="w3-col l1 w3-amber ribbon"></div>
-        <div class="w3-col l1 w3-blue-grey ribbon"></div>
-        <div class="w3-col l1 w3-black ribbon"></div>
+        <div class="w3-col l1 s1 m1 m1 s1 w3-red ribbon"></div>
+        <div class="w3-col l1 s1 m1 w3-pink ribbon"></div>
+        <div class="w3-col l1 s1 m1 w3-purple ribbon"></div>
+        <div class="w3-col l1 s1 m1 w3-deep-purple ribbon"></div>
+        <div class="w3-col l1 s1 m1 w3-indigo ribbon"></div>
+        <div class="w3-col l1 s1 m1 w3-blue ribbon"></div>
+        <div class="w3-col l1 s1 m1 w3-cyan ribbon"></div>
+        <div class="w3-col l1 s1 m1 w3-green ribbon"></div>
+        <div class="w3-col l1 s1 m1 w3-light-green ribbon"></div>
+        <div class="w3-col l1 s1 m1 w3-amber ribbon"></div>
+        <div class="w3-col l1 s1 m1 w3-blue-grey ribbon"></div>
+        <div class="w3-col l1 s1 m1 w3-black ribbon"></div>
     </div>
 
     <div class="w3-row header ">
@@ -54,87 +56,116 @@
     </div>
 
     <div class="w3-container w3-center l12 w3-margin-top">
-        <input placeholder="Search"  class="w3-border w3-round-large searchbox" type="text">
+        <input placeholder="Search" class="w3-border w3-round-large searchbox w3-text-gray" type="text">
     </div>
+    <div class="w3-container w3-center w3-margin-top filtertags w3-hide-small">
+
+        <a class="w3-tag w3-light-gray">Programming</a>
+        <a class="w3-tag w3-light-gray">Automobile</a>
+        <a class="w3-tag w3-light-gray">Technology</a>
+        <a class="w3-tag w3-light-gray">Gadgets</a>
+        <a class="w3-tag w3-light-gray">Lifestyle</a>
+    </div>
+    <button onclick="Accord('FilterAccordian')" class="w3-button w3-white w3-block w3-left-align w3-large  w3-hide-large w3-hide-medium">
+        Filters <i class="fa fa-caret-down toggledown" aria-hidden="true"></i><i class="fa fa-caret-up toggleup" style="display:none" aria-hidden="true"></i>
+    </button>
+
+    <div id="FilterAccordian" class="w3-hide w3-container filtertags w3-padding">
+        <a class="w3-tag w3-light-gray w3-margin-top">Programming</a>
+        <a class="w3-tag w3-light-gray w3-margin-top">Automobile</a>
+        <a class="w3-tag w3-light-gray w3-margin-top">Technology</a>
+        <a class="w3-tag w3-light-gray w3-margin-top">Gadgets</a>
+        <a class="w3-tag w3-light-gray w3-margin-top">Lifestyle</a>
+    </div>
+
+
     <div class="w3-container w3-margin-top">
         <div class="w3-row-padding">
-            <div class="w3-col  l2 m6 s12 w3-margin-top">
+            <div class="w3-col  l3 m6 s12 w3-margin-top">
                 <div class="w3-container w3-card-4">
-                    <div class="w3-container w3-center">
+                    <div class="w3-container w3-center w3-light-gray w3-margin-top">
                         <h6 class="postHeading">All the new Android O Features </h6>
                     </div>
-                    <div>
-                        <i class="material-icons w3-padding">person</i><span>Admin</span>
-                        <i class="material-icons w3-padding">today</i><span>26-Mar-2017</span>
+                    <div class="w3-container w3-padding">
+                        <a class="w3-text-blue">Admin</a><a class="w3-text-grey paddingleft"><i class="fa fa-calendar" aria-hidden="true"></i> 29-Mar-2017</a>
                     </div>
-
-                    <hr class="hrline" />
-                    <img src="images/androidO.png" alt="Norway" class="w3-image">
-                    <hr class="hrline" />
-                    <p class="gist">The past week has been the Big-O week for all of us involved in Google's ecosystem and the</p>
-
                     
-                    <div class="w3-light-grey" style="padding:0">
-                        <div class="w3-left  tags ">
-                            <span class="w3-tag w3-white w3-border">Automobile</span>
-                            <span class="w3-tag w3-white w3-border">Jaguar</span>
+                    <img src="images/androidO.png" alt="Norway" class="w3-image">
+                    <hr/>
+                    <div class="w3-light-grey">
+                        <div class="w3-left">
+                            <p>
+                                <i class="fa fa-tags siteColor" aria-hidden="true"></i>
+                                
+                                <span class="w3-text-gray w3-tag w3-light-gray">Android</span>
+                            </p>
                         </div>
                         <div class="w3-right">
-                            <button class="w3-margin-bottom w3-button w3-border w3-tiny  w3-blue w3-round-medium">Read more</button>
+                            <button class="w3-margin-bottom w3-button w3-border w3-round-medium w3-blue">
+                                <span>View</span>
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="w3-col  l2 m6 s12 w3-margin-top">
+            <div class="w3-col  l3 m6 s12 w3-margin-top">
                 <div class="w3-container w3-card-4">
-                    <div class="w3-container w3-center">
+                    <div class="w3-container w3-center w3-light-gray w3-margin-top">
                         <h6 class="postHeading">Jaguar F-Type GT4 racer in the works</h6>
                     </div>
-                    <div>
-                        <i class="material-icons w3-padding">person</i><span>Admin</span>
-                        <i class="material-icons w3-padding">today</i><span>26-Mar-2017</span>
+                    <div class="w3-container w3-padding">
+                        <a class="w3-text-blue">Admin</a>
+                        <a class="w3-text-grey paddingleft">
+                        <i class="fa fa-calendar" aria-hidden="true"></i> 29-Mar-2017</a>
                     </div>
-
                     <hr class="hrline" />
                     <img src="images/jaguar.jpg" alt="Norway" class="w3-image">
-                    <hr class="hrline" />
-                    <p class="gist">The model could be the first GT competition car to be created in-house by Jaguar in over 50 years.</p>
 
-
-                    <div class="w3-light-grey" style="padding:0">
-                        <div class="w3-left  tags ">
-                            <span class="w3-tag w3-white w3-border">Automobile</span>
-                            <span class="w3-tag w3-white w3-border">Jaguar</span>
+                    <hr />
+                    <div class="w3-light-grey">
+                        <div class="w3-left">
+                            <p>
+                                <i class="fa fa-tags siteColor" aria-hidden="true"></i>
+                                <span class="w3-text-gray w3-tag w3-light-gray">Programming</span>
+                                <span class="w3-text-gray w3-tag w3-light-gray">Android</span>
+                            </p>
                         </div>
                         <div class="w3-right">
-                            <button class="w3-margin-bottom w3-button w3-border w3-tiny  w3-blue w3-round-medium">Read more</button>
+                            <button class="w3-margin-bottom w3-button w3-border w3-round-medium w3-blue">
+                                <span>View</span>
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </button>
                         </div>
                     </div>
 
                 </div>
             </div>
-            <div class="w3-col  l2 m6 s12 w3-margin-top">
+            <div class="w3-col  l3 m6 s12 w3-margin-top">
                 <div class="w3-container w3-card-4">
-                    <div class="w3-container w3-center">
+                    <div class="w3-container w3-center w3-light-gray w3-margin-top">
                         <h6 class="postHeading">Website as a Progressive Web App</h6>
                     </div>
-                    <div>
-                        <i class="material-icons w3-padding">person</i><span>Admin</span>
-                        <i class="material-icons w3-padding">today</i><span>26-Mar-2017</span>
+                    <div class="w3-container w3-padding">
+                        <a class="w3-text-blue">Admin</a><a class="w3-text-grey paddingleft"><i class="fa fa-calendar" aria-hidden="true"></i> 29-Mar-2017</a>
                     </div>
-
                     <hr class="hrline" />
                     <img src="images/webapp.png" alt="Norway" class="w3-image">
-                    <hr class="hrline" />
-                    <p class="gist">There’s been a lot of buzz around Progressive Web Apps lately, with many people questioning whether they represent the future of the web.</p>
-
-                    <div class="w3-light-grey" style="padding:0">
-                        <div class="w3-left  tags ">
-                            <!--<span class="w3-tag w3-white w3-border">Automobile</span>
-                            <span class="w3-tag w3-white w3-border">Jaguar</span>-->
+                    
+                    <hr/>
+                    <div class="w3-light-grey">
+                        <div class="w3-left">
+                            <p>
+                            <i class="fa fa-tags siteColor" aria-hidden="true"></i>
+                            <span class="w3-text-gray w3-tag w3-light-gray">Programming</span>
+                            <span class="w3-text-gray w3-tag w3-light-gray">Android</span>
+                            </p>
                         </div>
                         <div class="w3-right">
-                            <button class="w3-margin-bottom w3-button w3-border w3-tiny  w3-blue w3-round-medium">Read more</button>
+                            <button class="w3-margin-bottom w3-button w3-border w3-round-medium w3-blue"> 
+                            <span>View</span>
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -144,14 +175,7 @@
 
 
     <script>
-function myFunction() {
-    var x = document.getElementById("demo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
+       
     </script>
 
 </body>

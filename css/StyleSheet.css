@@ -12,8 +12,11 @@
     width:85% !important;
     padding:8px;border:none;border-bottom:1px solid #ccc;
     background:url("../images/search-icon.png") right center no-repeat;
-    /*background-image:url("../images/search-icon.png");*/
-   
+}
+.searchbox:focus{
+    /*border: 0 none #FFF;
+    overflow: hidden;*/
+    outline:none;
 }
 .customfont{
     font-family: 'Fredoka One', cursive;
@@ -39,6 +42,9 @@
 .gist{
     font-size:12px;
     font-family: 'Segoe UI',sans-serif;
+}
+.siteColor{
+    color:#255377;
 }
 .postHeading{
     font-family: 'Roboto Slab',Georgia, serif;
@@ -80,10 +86,42 @@
     padding-left:8px;
 }
 
+.verticalLine {
+  border-left-style:solid;
+  border-left-width:thin;
+  border-left-color:lightgray;
+ 
+}
+
+.w3-button-c {
+    border: none;
+    display: inline-block;
+    outline: 0;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size:14px;
+}
+.w3-button-c:hover{
+    background-color:none;
+}
+
+.filtertags{
+cursor:pointer; 
+}
+.relativePos{
+    position:relative;
+}
 @media (max-width:720px) {
 
     .maincontainer {
-        width: 90%;
+        width: 100%;
         height: auto;
     }
 }
